@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set a clean background and text color */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 2.5em;
+            color: #2a3d66;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Container for the companies list */
+        .companies-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+
+        /* Display message in a styled manner */
+        .message {
+            color: orange;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Company list styling */
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .companies-container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>These are the companies looking for the skills mentioned by you:</h1>
+    <div class="companies-container">
+        
+            {{rawHtml message1}}
+        
+        <!-- Example of company list, replace with dynamic data -->
+        
+    </div>
+</body>
+</html>
